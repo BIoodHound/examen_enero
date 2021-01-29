@@ -14,6 +14,12 @@ public class Circle implements Shape {
     @Override
     public Double getArea() {
         Double radius_squared =  Math.pow(radius, 2.0);
-        return PI * radius_squared;
+        Double area = PI * radius_squared;
+        return roundToSecondDecimal(area);
+    }
+
+    private Double roundToSecondDecimal(Double val){
+        int precision = 100;
+        return Math.floor(val * precision + .5)/precision;
     }
 }

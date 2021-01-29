@@ -1,5 +1,7 @@
 package Interface;
 
-public interface Shape {
+import java.util.Comparator;
+
+public interface Shape{
     Double getArea();
 }
