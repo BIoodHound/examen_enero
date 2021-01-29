@@ -1,4 +1,6 @@
 package model;
 
-public class Square {
+import Interface.Shape;
+
+public class Square implements Shape {
 }

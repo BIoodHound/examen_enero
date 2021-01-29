@@ -1,4 +1,6 @@
 package model;
 
-public class Triangle {
+import Interface.Shape;
+
+public class Triangle implements Shape {
 }

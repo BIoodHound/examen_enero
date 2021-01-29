@@ -1,4 +1,6 @@
 package model;
 
-public class Circle {
+import Interface.Shape;
+
+public class Circle implements Shape {
 }
