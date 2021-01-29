@@ -19,10 +19,10 @@ public class Shape_ {
 
     @Test
     public void should_calculate_circle_area(){
-        Double expected_area = 12.56;
+        Double expected_area = 50.27;
         Double radius = 4.0;
         Shape circle = new Circle(radius);
-        Double area = circle.getArea();
+        Double area = roundToSecondDecimal(circle.getArea());
         assert (area.equals(expected_area));
     }
 
@@ -44,5 +44,10 @@ public class Shape_ {
         Shape triangle = new Triangle(base, height);
         Double area = triangle.getArea();
         assert (area.equals(expected_area));
+    }
+
+    private Double roundToSecondDecimal(Double val){
+        int precision = 100;
+        return Math.floor(val * precision + .5)/precision;
     }
 }

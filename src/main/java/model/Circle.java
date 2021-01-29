@@ -13,6 +13,7 @@ public class Circle implements Shape {
 
     @Override
     public Double getArea() {
-        return 0.0;
+        Double radius_squared =  Math.pow(radius, 2.0);
+        return PI * radius_squared;
     }
 }

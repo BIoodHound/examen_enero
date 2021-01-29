@@ -14,6 +14,6 @@ public class Triangle implements Shape {
 
     @Override
     public Double getArea() {
-        return 0.0;
+        return base*height;
     }
 }
